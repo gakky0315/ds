@@ -202,12 +202,12 @@ Transformerの異なるコンポーネントの重要性を評価するために
 
 # Transformer Model Relationship Diagram
 
-1. Inputs (トークンが入力される)
-   |
-   v
-2. Input Embedding (埋め込み層でベクトルに変換)
-   |
-   v
+1. Inputs (トークンが入力される)  
+   |  
+   v  
+2. Input Embedding (埋め込み層でベクトルに変換)  
+   |  
+   v  
 3. Positional Encoding (位置エンコーディングが追加される)
    |
    v
