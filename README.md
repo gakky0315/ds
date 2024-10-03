@@ -215,9 +215,9 @@ Transformerの異なるコンポーネントの重要性を評価するために
    |      
    |--- Multi-Head Attention  
    |　　　　|  
-   |       |--- Scaled Dot-Product Attention  
-   |               |  
-   |               |--- (クエリ、キー、バリューのテンソルによる計算)  
+   |　　　　|--- Scaled Dot-Product Attention  
+   |　　　　　　　　|  
+   |　　　　　　　　|--- (クエリ、キー、バリューのテンソルによる計算)  
    |  
    |--- Feed Forward Network (フィードフォワードネットワーク)  
    |  
@@ -227,16 +227,16 @@ Transformerの異なるコンポーネントの重要性を評価するために
 6. Decoder (N層繰り返し)  
    |  
    |--- Masked Multi-Head Attention  
-   |       |  
-   |       |--- Scaled Dot-Product Attention (未来の情報を隠すマスクがかけられる)  
-   |               |  
-   |               |--- (クエリ、キー、バリューのテンソルによる計算)  
+   |　　　　|  
+   |　　　　|--- Scaled Dot-Product Attention (未来の情報を隠すマスクがかけられる)  
+   |　　　　　　　　|  
+   |　　　　　　　　|--- (クエリ、キー、バリューのテンソルによる計算)  
    |  
    |--- Multi-Head Attention (エンコーダからの情報に基づくアテンション)  
-   |       |  
-   |       |--- Scaled Dot-Product Attention  
-   |               |  
-   |               |--- (エンコーダの出力をキー・バリューとして使用)  
+   |　　　　|  
+   |　　　　|--- Scaled Dot-Product Attention  
+   |　　　　　　　　|  
+   |　　　　　　　　|--- (エンコーダの出力をキー・バリューとして使用)  
    |  
    |--- Feed Forward Network (フィードフォワードネットワーク)  
    |  
