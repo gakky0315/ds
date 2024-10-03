@@ -208,43 +208,43 @@ Transformerの異なるコンポーネントの重要性を評価するために
 2. Input Embedding (埋め込み層でベクトルに変換)  
    |  
    v  
-3. Positional Encoding (位置エンコーディングが追加される)
-   |
-   v
-4. Encoder (N層繰り返し)
+3. Positional Encoding (位置エンコーディングが追加される)  
    |  
-   |--- Multi-Head Attention
-   |       |
-   |       |--- Scaled Dot-Product Attention
-   |               |
-   |               |--- (クエリ、キー、バリューのテンソルによる計算)
-   |
-   |--- Feed Forward Network (フィードフォワードネットワーク)
-   |
-   v
-5. Encoder Output (エンコーダの出力が生成される)
+   v  
+4. Encoder (N層繰り返し)  
+   |      
+   |--- Multi-Head Attention  
+   |       |  
+   |       |--- Scaled Dot-Product Attention  
+   |               |  
+   |               |--- (クエリ、キー、バリューのテンソルによる計算)  
+   |  
+   |--- Feed Forward Network (フィードフォワードネットワーク)  
+   |  
+   v  
+5. Encoder Output (エンコーダの出力が生成される)  
 
-6. Decoder (N層繰り返し)
-   |
-   |--- Masked Multi-Head Attention
-   |       |
-   |       |--- Scaled Dot-Product Attention (未来の情報を隠すマスクがかけられる)
-   |               |
-   |               |--- (クエリ、キー、バリューのテンソルによる計算)
-   |
-   |--- Multi-Head Attention (エンコーダからの情報に基づくアテンション)
-   |       |
-   |       |--- Scaled Dot-Product Attention
-   |               |
-   |               |--- (エンコーダの出力をキー・バリューとして使用)
-   |
-   |--- Feed Forward Network (フィードフォワードネットワーク)
-   |
-   v
-7. Decoder Output (デコーダの出力が生成される)
-   |
-   v
-8. Linear & Softmax (線形変換とソフトマックスで次の単語の予測)
-   |
-   v
-9. Output (次の単語の確率分布が生成される)
+6. Decoder (N層繰り返し)  
+   |  
+   |--- Masked Multi-Head Attention  
+   |       |  
+   |       |--- Scaled Dot-Product Attention (未来の情報を隠すマスクがかけられる)  
+   |               |  
+   |               |--- (クエリ、キー、バリューのテンソルによる計算)  
+   |  
+   |--- Multi-Head Attention (エンコーダからの情報に基づくアテンション)  
+   |       |  
+   |       |--- Scaled Dot-Product Attention  
+   |               |  
+   |               |--- (エンコーダの出力をキー・バリューとして使用)  
+   |  
+   |--- Feed Forward Network (フィードフォワードネットワーク)  
+   |  
+   v  
+7. Decoder Output (デコーダの出力が生成される)  
+   |  
+   v  
+8. Linear & Softmax (線形変換とソフトマックスで次の単語の予測)  
+   |  
+   v  
+9. Output (次の単語の確率分布が生成される)  
