@@ -214,7 +214,7 @@ Transformerの異なるコンポーネントの重要性を評価するために
 4. Encoder (N層繰り返し)  
    |      
    |--- Multi-Head Attention  
-   |       |  
+   |　　　　|  
    |       |--- Scaled Dot-Product Attention  
    |               |  
    |               |--- (クエリ、キー、バリューのテンソルによる計算)  
